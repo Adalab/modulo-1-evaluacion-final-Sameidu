@@ -1,0 +1,39 @@
+.footer{
+  background-color: $color-darkblue;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: $font-main;
+
+  &_credits{
+    color: $color-white;
+    font-size: 14px;
+    &-components--heart{
+      color: $color-orange;
+    }
+  }
+
+    &_nav-list--link{
+      color: $color-white;
+      font-size: 16px;
+      line-height: 30px;
+      text-decoration: none;
+      text-transform: uppercase; 
+}
+    &_nav-list--social{
+      color: $color-white;
+      font-size: 16px;
+      line-height: 30px;
+      text-decoration: none;
+      text-transform: uppercase; 
+    }
+
+    &_arrow {
+      width: 40px;
+      height: 40px;
+      background-color: $color-white;
+      border-radius: 50%;
+      line-height: 53px;
+      transform: translateY(-50%);
+  }
+}
