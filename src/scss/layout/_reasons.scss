@@ -1,7 +1,9 @@
 .reasons{
     background-color: $color-iceblue;
+    display: grid;
     text-align: center;
-    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
     &_title{
         font-family: $font-title;
         font-size: rem(32);
@@ -10,17 +12,29 @@
     }
     &_article{
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        
+        margin-left: 70px;
+        margin-right: 70px;
         &-title{
             font-family: $font-title;
-            font-size: rem(24);
+            font-size: rem(18);
             padding-bottom: rem(10);
         }
         &-text{
             font-family: $font-main;
             font-size: rem(20);
+            padding-bottom: rem(30);
         }
+    }
+
+    &_more {
+        background-color: $color-orange;
+        font-size: rem(18);
+        font-family: $font-main;
+        line-height: rem(40);
+        color: $color-white;
+        text-decoration: none;
+        width: rem(175);
+        border-radius: 22.5px;
+        margin-bottom: rem(60);
     }
 }
