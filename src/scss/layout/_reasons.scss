@@ -1,0 +1,26 @@
+.reasons{
+    background-color: $color-iceblue;
+    text-align: center;
+    align-items: center;
+    &_title{
+        font-family: $font-title;
+        font-size: rem(32);
+        margin-bottom: rem(50);
+        padding-top: rem(30);
+    }
+    &_article{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        
+        &-title{
+            font-family: $font-title;
+            font-size: rem(24);
+            padding-bottom: rem(10);
+        }
+        &-text{
+            font-family: $font-main;
+            font-size: rem(20);
+        }
+    }
+}
