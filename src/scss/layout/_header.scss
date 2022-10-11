@@ -18,24 +18,26 @@
     padding: rem(12);
    }
 
-   &-title {
-    font-size: rem(42);
-    font-family: $font-title;
-    color: $color-white;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: rem(60);
-    word-spacing:100vw;
+   &_name{
     align-items: center;
     transform: translateY(-50%);
-   }
-
-  &-text {
-      font-size: rem(16);
-      font-family: $font-main;
+    &-title {
+      font-size: rem(42);
+      font-family: $font-title;
       color: $color-white;
-      transform: translateY(-300%);
-  }
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: rem(60);
+      word-spacing:100vw;
+     }
+  
+    &-text {
+        font-size: rem(16);
+        font-family: $font-main;
+        color: $color-white;
+        padding-top: 10px;
+    }
+   }
 
   &-arrow {
     width: 40px;

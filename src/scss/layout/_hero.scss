@@ -35,9 +35,11 @@
         border: solid 2px $color-orange;
         border-radius: 22.5px;
         width: 70px;
-        transition: width 2s;
         &:hover {
-            width: 92vw;
+            transition: width;
+            width: 10%;
+            transform: rotate(360deg);
+            transition: 1s;
         }
     }
 }

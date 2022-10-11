@@ -1,44 +1,94 @@
 .footer{
   background-color: $color-darkblue;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  font-family: $font-main;
 
-  &_arrow {
-    width: 40px;
-    height: 40px;
-    background-color: $color-white;
-    border-radius: 50%;
-    line-height: 53px;
-    transform: translateY(-50%);
-}
-  &_inweb-list{
-    margin-bottom: 30px;
-    &--link{
-      color: $color-white;
-      font-size: rem(16);
-      line-height: rem(30);
-      text-decoration: none;
-      text-transform: uppercase;
+  &_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      background-color: $color-white;
+      border-radius: 50%;
+      transform: translateY(-50%);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      animation-name: go-up;
+      animation-duration: 1s;
+      animation-iteration-count: 6;
+      animation-direction: alternate;
+      animation-timing-function: ease-out;
     }
   }
-    &_social-list--link{
-      color: $color-white;
-      font-size: rem(16);
-      line-height: rem(30);
-      text-decoration: none;
-      text-transform: uppercase; 
-    }
 
-  &_credits{
-    color: $color-white;
-    font-size: 14px;
-    line-height: rem(30);
-    margin: rem(35);
-    &-components--heart{
-      color: $color-orange;
+  @keyframes go-up {
+    from{
+      transform: translateY(-50%);
+    }
+    to{
+      transform: translateY(-100%);
     }
   }
+
+  &_nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: $font-main;
+      &_inweb-list{
+        margin-bottom: 30px;
+        &--link{
+          color: $color-white;
+          font-size: rem(16);
+          line-height: rem(30);
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+        &_social-list{
+          &--link{
+            color: $color-white;
+            font-size: rem(16);
+            line-height: rem(30);
+            text-decoration: none;
+            text-transform: uppercase; 
+        }
+      }
+
+      &_credits{
+        color: $color-white;
+        font-size: 14px;
+        line-height: rem(30);
+        padding: rem(35);
+        &-components--heart{
+          color: $color-orange;
+        }
+      }
+      @media all and (min-width: 768px) {
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: left;
+        &_credits{
+          order: -1;
+          padding: 0;
+        }
+      }
+    
+      @media all and (min-width: 1024px) {
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: left;
+        margin: 0px 200px 0px 200px;
+        &_credits{
+          order: -1;
+          padding: 0;
+        }
+      }
+    }
 }
