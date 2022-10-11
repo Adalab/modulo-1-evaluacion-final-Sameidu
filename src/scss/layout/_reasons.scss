@@ -56,14 +56,6 @@
     }
 
     @media all and (min-width: 1200px) {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
         column-gap: 26px;
-        &_title{
-            grid-column: 1/4;
-        }
-        &_more{
-            grid-column: 1/4;
-        }
       } 
     }

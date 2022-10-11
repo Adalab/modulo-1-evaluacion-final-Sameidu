@@ -42,4 +42,12 @@
             transition: 1s;
         }
     }
+
+    @media all and (min-width: 768px){
+        margin: 65px 40px 60px 40px;
+    }
+
+    @media all and (min-width: 1024px){
+        margin: 65px 240px 60px 240px;
+    }
 }

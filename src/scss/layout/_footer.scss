@@ -79,16 +79,8 @@
       }
     
       @media all and (min-width: 1024px) {
-        justify-content: space-around;
-        align-items: flex-start;
-        flex-direction: row;
-        flex-wrap: wrap;
-        text-align: left;
         margin: 0px 200px 0px 200px;
-        &_credits{
-          order: -1;
-          padding: 0;
         }
       }
-    }
+    
 }
