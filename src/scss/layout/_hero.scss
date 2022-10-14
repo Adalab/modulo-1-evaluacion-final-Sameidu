@@ -22,19 +22,19 @@
         font-size: rem(18);
         font-family: $font-main;
         line-height: rem(30);
-        margin-bottom: 26px; 
+        margin-bottom: 46px; 
     }   
 
     &_button {
         font-size: rem(20);
         font-family: $font-main;
         line-height: rem(40);
-        color: $color-orange;
+        color: $color-white;
         text-decoration: none;
         text-align: center;
-        border: solid 2px $color-orange;
+        background-color: $color-orange;
         border-radius: 22.5px;
-        width: 70px;
+        width: 175px;
         &:hover {
             transition: width;
             width: 10%;
@@ -45,6 +45,9 @@
 
     @media all and (min-width: 768px){
         margin: 65px 40px 60px 40px;
+        &-text{
+            margin-bottom: 26px;
+        }
     }
 
     @media all and (min-width: 1024px){
